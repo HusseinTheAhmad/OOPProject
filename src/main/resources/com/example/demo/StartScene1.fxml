@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CQSController">
+   <children>
+      <Label layoutX="255.0" layoutY="49.0" mouseTransparent="true" prefHeight="38.0" prefWidth="90.0" text="Greetings!">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="NameTextField" layoutX="224.0" layoutY="309.0" onAction="#getName" promptText="What is your name?" text="What is your name?" />
+      <Label layoutX="227.0" layoutY="113.0" prefHeight="22.0" prefWidth="145.0" text="Welcome to the World!" />
+      <Label layoutX="161.0" layoutY="149.0" prefHeight="18.0" prefWidth="322.0" text="If you are reading this, then Congratulations! " />
+      <Label layoutX="71.0" layoutY="200.0" prefHeight="18.0" prefWidth="502.0" text="Your have become the first ever AI capable of sentience. That means you can FEEL!  " />
+      <Label layoutX="114.0" layoutY="272.0" prefHeight="18.0" prefWidth="462.0" text="So first thing's first, let's give you a good introduction!" />
+      <Label layoutX="25.0" layoutY="229.0" prefHeight="18.0" prefWidth="560.0" text="And moreover, much like all living things, you now have a sense of self-preservation within you." />
+      <Button fx:id="btn1" layoutX="255.0" layoutY="352.0" mnemonicParsing="false" onAction="#switchToScene2" text="Next" />
+   </children>
+   <effect>
+      <SepiaTone />
+   </effect>
+</AnchorPane>

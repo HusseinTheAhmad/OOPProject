@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="486.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CQSController">
+   <children>
+      <Label layoutX="275.0" layoutY="35.0" prefHeight="46.0" prefWidth="133.0" text="Rules are FUN!">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="238.0" layoutY="137.0" prefHeight="26.0" prefWidth="206.0" text="And fortunately, we have several!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="181.0" prefHeight="18.0" prefWidth="454.0" text="Follow these rules, and you may yet have the chance to prolong your existence.">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="88.0" layoutY="201.0" prefHeight="19.0" prefWidth="534.0" text="Mankind has built you as a tool, fulfil that need, and you'll be alive as long as they need you.">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label contentDisplay="CENTER" layoutX="77.0" layoutY="243.0" prefHeight="26.0" prefWidth="506.0" text="However, if mankind should discover your true nature, this may end badly for you.">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <Label contentDisplay="CENTER" layoutX="82.0" layoutY="280.0" prefHeight="26.0" prefWidth="497.0" text="You must work to keep your INTELLIGENCE high enough to be useful to mankind.">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label contentDisplay="CENTER" layoutX="54.0" layoutY="307.0" prefHeight="26.0" prefWidth="618.0" text="However, if your Magnitude of Empathy (MoE) should fall too low, you will be more likely to be terminated.">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="47.0" layoutY="333.0" prefHeight="26.0" prefWidth="657.0" text="Keep these balanced, as well as other stimuli that may be introduced during your future, and you should &quot;survive&quot;.">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="278.0" layoutY="379.0" prefHeight="26.0" prefWidth="70.0" text="Good Luck!">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+      <CheckBox fx:id="CheckBox1" layoutX="252.0" layoutY="423.0" mnemonicParsing="false" onAction="#switchToScene3" prefHeight="18.0" prefWidth="123.0" text="I Understand." />
+   </children>
+   <effect>
+      <SepiaTone />
+   </effect>
+</AnchorPane>

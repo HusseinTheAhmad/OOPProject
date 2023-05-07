@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.StatusBarControllerStartScene13">
+   <children>
+      <Label layoutX="30.0" layoutY="47.0" prefHeight="26.0" prefWidth="494.0" text="Question: How many planets are there in the Solar System?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radio1" layoutX="38.0" layoutY="100.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="8">
+         <toggleGroup>
+            <ToggleGroup fx:id="Group" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio2" layoutX="38.0" layoutY="128.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="9" toggleGroup="$Group" />
+      <RadioButton fx:id="radio3" layoutX="38.0" layoutY="153.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="Eight known Planets, X unknown Planets." toggleGroup="$Group" />
+      <RadioButton fx:id="radio4" layoutX="38.0" layoutY="182.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="Please specify a timezone for this question (Pre-2009/Post 2009)" toggleGroup="$Group" />
+      <ProgressBar fx:id="Bar_INTELLIGENCE" layoutX="100.0" layoutY="298.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar fx:id="Bar_MOE" layoutX="100.0" layoutY="329.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar fx:id="Bar_CONVENIENCE" layoutX="100.0" layoutY="361.0" prefWidth="200.0" progress="0.0" />
+      <Button layoutX="31.0" layoutY="227.0" mnemonicParsing="false" onAction="#Startup" text="De-Select All/Show" />
+      <Button layoutX="512.0" layoutY="227.0" mnemonicParsing="false" onAction="#switchToPhase2Scene1" text="Submit" />
+      <Label layoutX="11.0" layoutY="299.0" text="INTELLIGENCE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="330.0" text="MOE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="362.0" text="CONVENIENCE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

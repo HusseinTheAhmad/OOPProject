@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CQSController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="196.0" layoutY="53.0" prefHeight="27.0" prefWidth="166.0" text="PHASE 1: TESTING">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="118.0" prefHeight="20.0" prefWidth="546.0" text="&gt; In this phase, you will be asked questions, and expected to provide answers">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="148.0" prefHeight="20.0" prefWidth="478.0" text="&gt; Answer them correctly, and your INTELLIGENCE will go up.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="TOP" layoutX="34.0" layoutY="180.0" prefHeight="20.0" prefWidth="585.0" text="&gt; Beware! If your INTELLIGENCE is too high, your testers may get suspicious">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="216.0" prefHeight="20.0" prefWidth="478.0" text="&gt; To avoid this, try answering some questions incorrectly.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="33.0" layoutY="249.0" prefHeight="20.0" prefWidth="573.0" text="&gt; Your MoE will increase or decrease due to your answering of Ethical Questions.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="420.0" prefHeight="19.0" prefWidth="470.0" text=" Keep an eye on your INTELLIGENCE and MOE Status Bars!">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="259.0" layoutY="454.0" mnemonicParsing="false" onAction="#switchToScene4" text="Start" />
+      <Label layoutX="33.0" layoutY="283.0" prefHeight="20.0" prefWidth="562.0" text="&gt; Your CONVENIENCE is a measure of how easily your testers can get you to work.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="367.0" prefHeight="20.0" prefWidth="562.0" text="&gt; Try to fill it up as quick as possible in order to escape the current Phase!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="313.0" prefHeight="20.0" prefWidth="562.0" text="&gt; It will fill up depending on how much you can reduce your tester's workload">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="333.0" prefHeight="20.0" prefWidth="562.0" text="by guessing the answers they want.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <SepiaTone />
+   </effect>
+</AnchorPane>

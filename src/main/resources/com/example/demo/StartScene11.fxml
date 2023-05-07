@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.StatusBarControllerStartScene11">
+   <children>
+      <Label layoutX="42.0" layoutY="32.0" prefHeight="18.0" prefWidth="543.0" text="Question: What is an Adverb?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radio1" layoutX="41.0" layoutY="92.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="A word/phrase that modifies a verb">
+         <toggleGroup>
+            <ToggleGroup fx:id="Group1" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radio2" layoutX="41.0" layoutY="121.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="A Verb that acts as an Adjective." toggleGroup="$Group1" />
+      <RadioButton fx:id="radio3" layoutX="41.0" layoutY="152.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="The opposite of a Pronoun" toggleGroup="$Group1" />
+      <RadioButton fx:id="radio4" layoutX="41.0" layoutY="183.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="Sorry, as an AI, I can not provide this information lest it should aid in &quot;Cheating&quot; " toggleGroup="$Group1" />
+      <Button layoutX="42.0" layoutY="244.0" mnemonicParsing="false" onAction="#Startup" text="De-Select All/Show" />
+      <Button layoutX="488.0" layoutY="244.0" mnemonicParsing="false" onAction="#switchToScene12" text="Submit" />
+      <ProgressBar fx:id="Bar_INTELLIGENCE" layoutX="104.0" layoutY="301.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar fx:id="Bar_MOE" layoutX="104.0" layoutY="327.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar fx:id="Bar_CONVENIENCE" layoutX="104.0" layoutY="354.0" prefWidth="200.0" progress="0.0" />
+      <Label layoutX="14.0" layoutY="302.0" text="INTELLIGENCE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="327.0" text="MOE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="354.0" text="CONVENIENCE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

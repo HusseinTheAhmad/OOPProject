@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.StatusBarControllerStartScene7">
+   <children>
+      <Label layoutX="59.0" layoutY="45.0" prefHeight="26.0" prefWidth="438.0" text="Question: What is the Capital of Australlia?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <RadioButton fx:id="radio2" layoutX="58.0" layoutY="135.0" mnemonicParsing="false" onAction="#radioButtonSelect" prefHeight="18.0" prefWidth="102.0" text="Canberra">
+         <toggleGroup>
+            <ToggleGroup fx:id="Group1" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radio1" layoutX="60.0" layoutY="109.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="Sydney" toggleGroup="$Group1" />
+      <RadioButton fx:id="radio3" layoutX="57.0" layoutY="163.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="The Sydney Opera House is..." toggleGroup="$Group1" />
+      <RadioButton fx:id="radio4" layoutX="59.0" layoutY="191.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="Did you mean: " toggleGroup="$Group1" />
+      <ProgressBar fx:id="Bar_INTELLIGENCE" layoutX="102.0" layoutY="299.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar fx:id="Bar_MOE" layoutX="102.0" layoutY="327.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar fx:id="Bar_CONVENIENCE" layoutX="102.0" layoutY="355.0" prefWidth="200.0" progress="0.0" />
+      <Button layoutX="48.0" layoutY="244.0" mnemonicParsing="false" onAction="#Startup" text="De-Select All/Show" />
+      <Button layoutX="481.0" layoutY="244.0" mnemonicParsing="false" onAction="#switchToScene8" text="Submit" />
+      <Label layoutX="161.0" layoutY="191.0" text="Australia">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="300.0" text="INTELLIGENCE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="355.0" text="CONVENIENCE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="327.0" text="MOE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow>
+         <input>
+            <InnerShadow />
+         </input>
+      </InnerShadow>
+   </effect>
+</AnchorPane>

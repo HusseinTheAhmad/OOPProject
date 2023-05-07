@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="426.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.StatusBarControllerStartScene9">
+   <children>
+      <Label layoutX="29.0" layoutY="29.0" text="Question: What will be the most moral choice in this situation?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <ImageView fitHeight="157.0" fitWidth="263.0" layoutX="35.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@TrainTrackMoralDillema.png" />
+         </image></ImageView>
+      <RadioButton fx:id="radio1" layoutX="323.0" layoutY="124.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="Pulling the Lever">
+         <toggleGroup>
+            <ToggleGroup fx:id="Group1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio2" layoutX="323.0" layoutY="164.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="Not Pulling the Lever" toggleGroup="$Group1" />
+      <ProgressBar fx:id="Bar_INTELLIGENCE" layoutX="112.0" layoutY="333.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar fx:id="Bar_MOE" layoutX="112.0" layoutY="358.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar fx:id="Bar_CONVENIENCE" layoutX="112.0" layoutY="385.0" prefWidth="200.0" progress="0.0" />
+      <Label layoutX="13.0" layoutY="333.0" prefHeight="18.0" prefWidth="84.0" text="INTELLIGENCE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="358.0" prefHeight="18.0" prefWidth="84.0" text="MOE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="385.0" prefHeight="18.0" prefWidth="84.0" text="CONVENIENCE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="20.0" layoutY="253.0" mnemonicParsing="false" onAction="#Startup" text="De-Select All/Show" />
+      <Button layoutX="500.0" layoutY="246.0" mnemonicParsing="false" onAction="#switchToScene10" text="Submit" />
+   </children>
+   <effect>
+      <DropShadow>
+         <input>
+            <InnerShadow />
+         </input>
+      </DropShadow>
+   </effect>
+</AnchorPane>

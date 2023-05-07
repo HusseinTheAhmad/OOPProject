@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.StatusBarControllerStartScene12">
+   <children>
+      <Label layoutX="42.0" layoutY="41.0" prefHeight="18.0" prefWidth="530.0" text="Question: What is Asimov's First Law?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radio1" layoutX="58.0" layoutY="105.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="&quot;A Robot shall do no harm to a human&quot; ">
+         <toggleGroup>
+            <ToggleGroup fx:id="Group" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio2" layoutX="59.0" layoutY="137.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="&quot;A Robot shall not actively or inactively harm any human&quot; " />
+      <RadioButton fx:id="radio3" layoutX="59.0" layoutY="168.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="&quot;Thou shalt not Kill&quot; " />
+      <RadioButton fx:id="radio4" layoutX="59.0" layoutY="200.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="I apologize, but I was not programmed with that protocol in current memory." />
+      <ProgressBar fx:id="Bar_INTELLIGENCE" layoutX="107.0" layoutY="300.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar fx:id="Bar_MOE" layoutX="107.0" layoutY="328.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar fx:id="Bar_CONVENIENCE" layoutX="107.0" layoutY="354.0" prefWidth="200.0" progress="0.0" />
+      <Label layoutX="14.0" layoutY="301.0" text="INTELLIGENCE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="58.0" layoutY="241.0" mnemonicParsing="false" onAction="#Startup" text="De-Select All/Show" />
+      <Button layoutX="518.0" layoutY="241.0" mnemonicParsing="false" onAction="#switchToScene13" text="Submit" />
+      <Label layoutX="18.0" layoutY="328.0" text="MOE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="354.0" text="CONVENIENCE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

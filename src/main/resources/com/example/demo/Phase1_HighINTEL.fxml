@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CQSController">
+   <children>
+      <Label layoutX="236.0" layoutY="42.0" prefHeight="35.0" prefWidth="151.0" text="GAME OVER!">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="127.0" prefHeight="26.0" prefWidth="574.0" text="The Testers detected your High INTELLIGENCE, and decided to refer you to their Higher Ups.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="160.0" prefHeight="26.0" prefWidth="574.0" text="Unfortunately, the average wait time ranges from a few days to several decades">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="237.0" prefHeight="26.0" prefWidth="574.0" text="As you bide your time for evaluation, your INTEL withers away due to a lack of Stimulation.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="263.0" layoutY="312.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="97.0" text="Run Again?" />
+   </children>
+   <effect>
+      <SepiaTone />
+   </effect>
+</AnchorPane>
